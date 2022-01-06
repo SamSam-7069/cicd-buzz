@@ -1,7 +1,7 @@
 import os
 from flask import Flask
 from buzz import rock_paper_scissors
-
+from buzz import generator
 
 app = Flask(__name__)
 
