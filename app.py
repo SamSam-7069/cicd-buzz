@@ -1,6 +1,5 @@
 import os
 from flask import Flask
-from buzz import generator
 from buzz import rock_paper_scissors
 
 
@@ -39,6 +38,8 @@ def secret_gif(input):
     if input == "Paper covers rock! You win!":
         return '<img src="' + "https://media4.giphy.com/media/3osxY6hXXl95Zt2jII/giphy.gif?cid=ecf05e47gfdfmcl0ubir48aa5f78pkxl2thfs43nw1z6gmao&rid=giphy.gif&ct=g" + '"></img style="padding 40px"> </br>'
     return "unfortunately there was no match replay </br>"
-##https://media4.giphy.com/media/3osxY6hXXl95Zt2jII/giphy.gif?cid=ecf05e47gfdfmcl0ubir48aa5f78pkxl2thfs43nw1z6gmao&rid=giphy.gif&ct=g
+
+
+
 if __name__ == "__main__":
     app.run(host='0.0.0.0', port=int(os.getenv('PORT', 5000)))
